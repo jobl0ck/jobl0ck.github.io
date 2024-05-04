@@ -1,0 +1,58 @@
+* {
+   --main-bg-color: rgb(45, 58, 58); 
+   --text-color: white;
+   --accent-color: rgb(241, 200, 219);
+   --accent-sec-color: rgb(139, 128, 249);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 0;
+}
+
+h1 {
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+#title_bg {
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    background: center top+30% url(/background.jpg) no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0,.8);
+}
+
+#title_text {
+    background-color: rgba(0, 0, 0, 1);
+    margin: auto;
+    
+    padding: 10px;
+    width: max-content;
+
+    border-radius: 10px;
+}
+
+#title_bg #title_text h1 {
+    font-size: 100px;
+    font-family: monospace;
+    margin: 0;
+    width: max-content;
+
+    background: -webkit-linear-gradient(left, var(--accent-color), var(--accent-sec-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width:700px) {
+    #title_bg #title_text h1 {
+        font-size: 50px;
+    }
+
+    #title_bg {
+        background: center top+25% url(/artem-stoliar-QUwNpfrVlIc-unsplash.jpg) no-repeat;
+    }
+}
