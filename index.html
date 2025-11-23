@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jobl0ck.dev</title>
+    <meta content="jobl0ck.dev" property="og:title" />
+    <meta content="Hi! Welcome to my website!" property="og:description" />
+    <meta content="https://jobl0ck.dev" property="og:url" />
+
     <link rel="stylesheet" href="style.css">
     
   </head>
@@ -12,7 +16,10 @@
     <script src="script.js"></script>
     <div class="wrapper">
       <div class="terminal">
-        <div class="topbar"></div>
+        <div class="topbar">
+          Terminal
+          <div class="close" onclick='alert("no")'></div>
+        </div>
         <div class="content">
           <section id="sitename">
             <pre id="sitenameText">
@@ -21,8 +28,7 @@
   | |/ _ \| '_ \| | | | |/ __| |/ / / _` |/ _ \ \ / /
   | | (_) | |_) | | |_| | (__|   < | (_| |  __/\ V / 
  _/ |\___/|_.__/|_|\___/ \___|_|\_(_)__,_|\___| \_/  
-|__/                                                 
-            </pre>
+|__/                                                 </pre>
           </section>
           <!--
           <section id="about_me">
@@ -45,9 +51,38 @@
             <div class="content-wrapper">
               <div class="text-content">
                 <ul>
-                  <li><img width="19" height="19" src="/blog.svg"/><a href="/blog">my blog</a><span class="note">(under construction)</span></li>
-                  <li><img width="19" height="19" src="/github.svg"/><a href="https://github.com/jobl0ck">jobl0ck</a></li>
-                  <li><img width="19" height="19" src="/discord.svg"/>@jobl0ck</li>
+                  <li>
+                    <img width="19" height="19" src="/blog.svg"/>
+                    <span><a href="/blog">my blog</a><span class="note">(under construction)</span></span>
+                  </li>
+                  <li>
+                    <img width="19" height="19" src="/github.svg"/>
+                    <a href="https://github.com/jobl0ck">jobl0ck</a>
+                  </li>
+                  <li>
+                    <img width="19" height="19" src="/matrix.svg"/>
+                    <a href="https://matrix.to/#/@joblock:matrix.org">@joblock:matrix.org</a>
+                  </li>
+                  <li>
+                    <img width="19" height="19" src="/discord.svg"/>
+                    @jobl0ck
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="support">
+            <span class="prefix">
+              root@jobl0ck.dev :~$
+            </span>
+            <span class="command">cat support.txt</span>
+            <div class="content-wrapper">
+              <div class="text-content">
+                <ul>
+                  <li>
+                    <img width="19" height="19" src="/xmr.svg"/>
+                    <a href='javascript:alert("Monero Address: 8BjNAUb2Ec1A6fquiK7CHBNnE7NWtS9WYZva8yNFTX6iX6rsPKexYsBDZtwZDcnDDj1zQTT1ibj3ZEFyxxQkiNt1QHJ8Hjm")'>XMR</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -58,6 +93,14 @@
             </span>
             <span class="cursor">█</span>
           </section>
+
+          <div class="kittycat">
+            <pre id="asciicat">
+meow   ／l、    
+     （ﾟ､ ｡ ７   
+       l  ~ヽ   
+       じしf_,)ノ</pre>
+          </div>
         </div>
       </div>
     </div>
